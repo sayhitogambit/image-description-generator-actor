@@ -1,0 +1,14 @@
+{
+  "title": "Image Description Generator Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "imageUrl": {"title": "Image URL", "type": "string", "editor": "textfield"},
+    "detailLevel": {"title": "Detail Level", "type": "string", "enum": ["brief", "detailed", "technical"], "default": "detailed"},
+    "includeObjects": {"title": "Include Object Detection", "type": "boolean", "default": true},
+    "includeColors": {"title": "Include Color Analysis", "type": "boolean", "default": true},
+    "model": {"title": "AI Model", "type": "string", "enum": ["openai/gpt-4o", "anthropic/claude-3.5-sonnet"], "default": "openai/gpt-4o"},
+    "openrouterApiKey": {"title": "OpenRouter API Key", "type": "string", "isSecret": true}
+  },
+  "required": ["imageUrl", "openrouterApiKey"]
+}

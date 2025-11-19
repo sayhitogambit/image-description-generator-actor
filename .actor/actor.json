@@ -1,0 +1,1 @@
+{"actorSpecification": 1, "name": "image-description-generator", "title": "AI Image Description Generator", "description": "Generate detailed descriptions of images using AI vision models.", "version": "1.0.0", "dockerfile": "./Dockerfile", "input": "./.actor/input_schema.json"}
