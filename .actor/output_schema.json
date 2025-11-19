@@ -1,0 +1,62 @@
+{
+  "title": "Image Description Generator Output",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "description": {
+      "title": "Image Description",
+      "type": "string",
+      "description": "Detailed description of the image",
+      "editor": "textarea"
+    },
+    "objects": {
+      "title": "Detected Objects",
+      "type": "array",
+      "description": "List of objects detected in the image",
+      "editor": "json",
+      "items": {
+        "type": "string"
+      }
+    },
+    "colors": {
+      "title": "Dominant Colors",
+      "type": "array",
+      "description": "Dominant colors present in the image",
+      "editor": "json",
+      "items": {
+        "type": "string"
+      }
+    },
+    "mood": {
+      "title": "Mood/Atmosphere",
+      "type": "string",
+      "description": "The overall mood or atmosphere of the image",
+      "editor": "textfield"
+    },
+    "imageUrl": {
+      "title": "Image URL",
+      "type": "string",
+      "description": "URL of the analyzed image",
+      "editor": "textfield"
+    },
+    "cost": {
+      "title": "API Cost",
+      "type": "number",
+      "description": "Total API cost in USD",
+      "editor": "number"
+    },
+    "chargePrice": {
+      "title": "Charge Price",
+      "type": "number",
+      "description": "Price charged to user in USD",
+      "editor": "number"
+    },
+    "createdAt": {
+      "title": "Created At",
+      "type": "string",
+      "description": "ISO timestamp of when this was created",
+      "editor": "textfield",
+      "format": "date-time"
+    }
+  }
+}
